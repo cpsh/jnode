@@ -1,0 +1,2 @@
+# jnode
+open blog

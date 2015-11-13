@@ -1,0 +1,51 @@
+#tag block("meta")
+    <title>卢春梦的简介 - JFinal,nodejs博客dreamlu.net</title>
+    <meta content="dreamlu,jfinal,bae,开源博客" name="Keywords">
+    <meta content="dreamlu.net 是一个使用Java开发，采用Jfinal mvc框架，MySQL数据库和Jade模版引擎，搭建于百度云BAE的开源博客系统。" name="Description">
+#end
+
+#tag block("content")
+    <article class="ss-full-width">
+        <div id="content_box">
+            <div id="content" class="hfeed">
+                <script src="http://git.oschina.net/596392912/jnode/preview"></script>
+                <h3>关于</h3>
+                <p>卢春梦，网名<code>Dreamlu</code>2011年毕业于大湖北！</p>
+                <hr/>
+                <h3>愿望</h3>
+                <p>安得广厦千万间，大庇天下程序缘。</p>
+                <hr/>
+                <h3>掌握</h3>
+                <p>
+                    <code>java</code>
+                    <code>JFinal</code>
+                    <code>spring mvc</code>
+                    <code>mysql</code>
+                    <code>jquery</code>
+                    <code>linux</code>
+                </p>
+                <hr/>
+                <h3>熟悉</h3>
+                <p>
+                    <code>nodejs</code>
+                    <code>coffee-script</code>
+                </p>
+                <hr/>
+                <h3>时间线</h3>
+                <ul>
+                    <li>
+                        2011.11 ～ 2013.03 掌上明珠
+                    </li>
+                    <li>
+                        2013.04 ～ 2014.05 永乐票务
+                    </li>
+                    <li>
+                        2014.05 ～  至今   美家科技
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </article>
+#end
+
+#include ("layout.vm")

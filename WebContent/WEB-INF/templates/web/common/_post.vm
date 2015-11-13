@@ -1,0 +1,88 @@
+#define(Options options, Blog blog)
+<article class="article">
+    <div id="content_box">
+        <div id="post-356" class="post-356 post type-post status-publish format-standard hentry category-featured category-wellhead tag-social-media-2 g post cat-32-id cat-80-id has_thumb">
+            <div class="single_post">
+                <div class="post-date-ribbon">
+                    <div class="corner"></div>${format(blog.get('update_time')) }
+                </div>
+                <div class="breadcrumb">
+                    <a href="${BASE_PATH }" rel="nofollow">首页</a>&nbsp;&nbsp;»&nbsp;&nbsp;
+                    <a href="${BASE_PATH }${typeUrl}" title="${typeName}">${typeName}</a>&nbsp;&nbsp;»&nbsp;&nbsp; ${blog.get('title')}
+                </div>
+                <header>
+                    <h1 class="title single-title">${blog.get('title')}</h1>
+                        <span class="theauthor single-postmeta">
+                            <div class="author_mt hp_meta">
+                                <span class="mt_icon"></span>
+                                #if (blog.get('url'))
+                                    <a href="${blog.get('url')}" target="_blank" title="作者：${blog.get('nick_name')}">$!{blog.get('nick_name').asString()}</a>
+                                #else
+                                    ${blog.get('nick_name').asString()}
+                                #end
+                            </div>
+                        <div class="cat_mt hp_meta">${tags}</div>
+                        <div class="time_mt hp_meta">
+                            <span class="time_icon"> </span>${baseFormat(blog.get('create_time')) }
+                        </div>
+                        <div class="view_mt hp_meta">
+                            <span class="view_icon"> </span>${blog.get('view_count')}
+                        </div>
+                        <div class="comment_mt hp_meta">
+                            <a href="#commentsAdd" title="评论数">
+                                <span class="mt_icon"></span>
+                                <span data-thread-key="${blog.get('id')}" data-count-type="comments" class="ds-thread-count"></span>
+                            </a>
+                        </div>
+                    </span>
+                </header>
+                <!-- .headline_area-->
+                <div class="post-single-content box mark-links">${blog.get('content')}</div>
+            </div>
+            <div class="post-lisence">
+                <div class="ds-share flat" data-thread-key="${blog.get('id')}" 
+                        data-title="${blog.get('title')}" data-images="${getBlogImg(blog.get('content').asString())}" 
+                        data-content="${filterSubText(blog.get('content').asString(), 30)}" 
+                        data-url="${options.get('site_url')}/blog/${blog.get('id')}">
+                    <div class="ds-share-inline">
+                        <ul class="ds-share-icons-16">
+                            <li data-toggle="ds-share-icons-more"><span class="ds-more">分享到：</span></li>
+                            <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                            <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+                            <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+                            <li><a id="ds_wechat" class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+                        </ul>
+                        <div class="ds-share-icons-more"></div>
+                    </div>
+                </div>
+                <div id="ds-alipay">
+                    <img height="80" width="80" src="${options.get('cdn_path')}/images/alipay.png?v=${options.get('site_version')}" alt="捐助共勉" title="捐助共勉">
+                </div>
+                版权声明：若无特殊注明，本文皆为原创，转载请保留文章出处。<br/>
+            </div>
+            <div class="postauthor">
+                #if (blog.get('blog_type')  == 0)
+                    <h4>关于作者</h4>
+                    <img alt="${blog.get('nick_name')}" src="${blog.get('head_photo')}" height="80" width="80" style="border-radius: 40px;" class="avatar avatar-85 photo"/>
+                    <h5>
+                        #if (blog.get('url'))
+                            <a href="${blog.get('url')}" target="_blank" title="作者：${blog.get('nick_name')}">${blog.get('nick_name')}</a>
+                        #else
+                            ${blog.get('nick_name')}
+                        #end
+                    </h5>
+                    <p>${blog.get('signature')}</p>
+                #else
+                    <h4>原文地址：</h4><a href="${blog.get('share_url')}" target="_blank">${blog.get('share_url')}</a>
+                #end
+            </div>
+            <div class="related-posts">
+                <script type="text/javascript" id="wumiiRelatedItems"></script>
+            </div>
+        </div><!-- post-->
+        <div id="commentsAdd">
+            <!-- duoshuo  评论-->
+            <div data-thread-key="${blog.get('id')}" data-title="${blog.get('title')}" data-category="snode" data-author-key="${blog.get('user_id')}" class="ds-thread"></div>
+        </div>
+    </div>
+</article>

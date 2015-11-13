@@ -1,0 +1,4 @@
+Sitemap: http://www.dreamlu.net/sitemap-blog.xml
+
+User-agent:*
+Disallow:/admin/

@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/templates/error/404.vm=UTF-8
+encoding//WebContent/WEB-INF/templates/error/500.vm=UTF-8
+encoding//WebContent/WEB-INF/templates/web/about.vm=UTF-8
+encoding//WebContent/WEB-INF/templates/web/index.vm=UTF-8
+encoding//WebContent/WEB-INF/templates/web/layout.vm=UTF-8
+encoding//WebContent/WEB-INF/templates/web/life/html5.vm=UTF-8
+encoding//WebContent/WEB-INF/templates/web/life/index.vm=UTF-8
+encoding//WebContent/WEB-INF/templates/web/life/itunes.vm=UTF-8
+encoding//WebContent/WEB-INF/templates/xml/rss.vm=UTF-8
+encoding/<project>=UTF-8

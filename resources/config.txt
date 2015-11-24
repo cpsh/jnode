@@ -1,5 +1,5 @@
 ## db config BAE 
-db.jdbcUrl = jdbc:mysql://45.32.255.13:3306/jnode_db?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+db.jdbcUrl = jdbc:mysql://45.32.255.13:3306/jnode_db?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true
 db.user = root
 db.password = mysql_rkidc_123456
 

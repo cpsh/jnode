@@ -28,7 +28,7 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-pool-1.6.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jedis-2.2.1.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/oauth2-lcm.0.2.jar" sourcepath="/Oauth2.0"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jfinal-1.8-bin.jar" sourcepath="F:/cpsh/resource/software/jfinall-2.0/jfinal-2.0-all/jfinal-2.0-src.zip"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jfinal-1.8-bin.jar" sourcepath="WebContent/WEB-INF/lib/jfinal-2.0-src.zip"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/druid-1.0.5.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/ecj-4.3.1.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/xpp3-1.1.4c.jar"/>

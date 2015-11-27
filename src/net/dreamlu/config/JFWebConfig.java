@@ -130,7 +130,8 @@ public class JFWebConfig extends JFinalConfig {
         atbp.setShowSql(isDev);
         me.add(atbp);
         // sql记录
-        SqlReporter.setLogger(!isDev);
+        //SqlReporter.setLogger(!isDev);
+        SqlReporter.setLogger(true);
         // redis
         me.add(new JedisPlugin());
         // 添加Quartz定时调度

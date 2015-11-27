@@ -14,7 +14,7 @@
     <aside class="sidebar c-4-12">
         <div id="sidebars" class="g">
             <div class="sidebar">
-                #include ("common/_sidebar.vm")
+                #include ("common/_sidebar_blog.vm")
             </div>
         </div>
     </aside>

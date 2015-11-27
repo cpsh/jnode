@@ -1,9 +1,9 @@
-#define(Options options, Page blogPage)
+#define(Options options)
 
 #tag block("meta")
-    <title>DreamLu开源博客 - JFinal,nodejs博客dreamlu.net</title>
-    <meta content="dreamlu,jfinal,bae,开源博客" name="Keywords">
-    <meta content="dreamlu.net 是一个使用Java开发，采用Jfinal mvc框架，MySQL数据库和Jade模版引擎，搭建于百度云BAE的开源博客系统。" name="Description">
+    <title>呱咚网 www.guadong.net 编程技术网</title>
+    <meta content="编程技术网,技术,呱咚" name="Keywords">
+    <meta content="www.guadong.net 是一个使用Java开发，采用Jfinal mvc框架，MySQL数据库和Jade模版引擎，搭建于百度云BAE的开源博客系统。" name="Description">
 #end
 
 #tag block("content")
@@ -25,6 +25,7 @@
             </div>
         </div>
     </aside>
+
 #end
 
 #tag block("script")

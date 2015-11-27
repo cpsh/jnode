@@ -22,7 +22,7 @@ public class Consts {
 	// 用户session key
 	public static final String USER_SESSION = "user";
 	// 分页大小
-	public static final int BLOG_PAGE_SIZE = 8;
+	public static final int BLOG_PAGE_SIZE = 5;
 	// 百度云 ak，sk
 	public static String AK = ConfigKit.getStr("db.user");
 	public static String SK = ConfigKit.getStr("db.password");

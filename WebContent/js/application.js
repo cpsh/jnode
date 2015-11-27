@@ -98,9 +98,11 @@ $(function() {
 });
 
 // load qrcode
+/*
 $(function(){
 	var html = '<div id="qrcode" style="z-index: 999;cursor: pointer; position: fixed; bottom: 30px; left: 10px;"><img style="border: 2px;" width="100" height="100" src="' + cdn_path + '/api/qrcode-' +  qrcode + '.png" alt="扫描二维码即可访问本页" title="扫描二维码即可访问本页"></div>';
 	setTimeout(function() {
 	  return $('body').append(html);
 	}, 500);
 });
+*/
